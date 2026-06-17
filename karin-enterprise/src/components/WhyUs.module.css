@@ -1,0 +1,44 @@
+.section { padding: 6rem 4vw; background: var(--beige); }
+.inner {
+  display: grid; grid-template-columns: 1fr 1fr;
+  gap: 5vw; align-items: center;
+}
+.visual { position: relative; }
+.imgStack { position: relative; width: 100%; }
+.imgMain {
+  width: 78%; border-radius: 1.5rem;
+  box-shadow: 0 24px 64px rgba(46,58,47,.15);
+  overflow: hidden;
+}
+.imgMain img { width: 100%; height: 380px; object-fit: cover; }
+.imgAccent {
+  position: absolute; bottom: -30px; right: 0;
+  width: 44%; border-radius: 1rem;
+  box-shadow: 0 12px 32px rgba(46,58,47,.2);
+  overflow: hidden; border: 4px solid var(--cream);
+}
+.imgAccent img { width: 100%; height: 200px; object-fit: cover; }
+.badge {
+  position: absolute; top: -16px; right: 8%;
+  background: var(--gold); color: var(--white);
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1rem; font-weight: 600;
+  padding: .6rem 1.1rem; border-radius: 100px;
+  box-shadow: 0 4px 16px rgba(201,169,110,.4);
+}
+.points { display: flex; flex-direction: column; gap: 1.4rem; margin-top: 2rem; }
+.point { display: flex; gap: 1rem; align-items: flex-start; }
+.pointIcon {
+  flex-shrink: 0; width: 42px; height: 42px; border-radius: 10px;
+  background: var(--white);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 10px var(--shadow);
+}
+.pointText h4 { font-weight: 600; font-size: .95rem; margin-bottom: .25rem; }
+.pointText p { font-size: .85rem; color: var(--ink-lt); line-height: 1.6; }
+
+@media (max-width: 900px) {
+  .inner { grid-template-columns: 1fr; }
+  .visual { display: none; }
+}

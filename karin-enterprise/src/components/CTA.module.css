@@ -1,0 +1,14 @@
+.section {
+  padding: 6rem 4vw;
+  background: linear-gradient(135deg, var(--ink) 0%, #3d5040 100%);
+  text-align: center;
+}
+.sub {
+  color: rgba(240,230,218,.75);
+  max-width: 480px; margin: 0 auto 2.5rem;
+  line-height: 1.7;
+}
+.buttons {
+  display: flex; gap: 1.1rem;
+  justify-content: center; flex-wrap: wrap;
+}
