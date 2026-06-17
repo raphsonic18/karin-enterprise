@@ -1,9 +1,14 @@
 node_modules/
 dist/
 .env
+
 .env.local
 .vercel
 *.log
 
-.vercel
 .env*
+
+url_tokens.txt
+*.txt
+*.env
+
