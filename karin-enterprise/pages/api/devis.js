@@ -70,6 +70,8 @@ export default async function handler(req, res) {
       `\nMerci !`
     )
 
+    console.log('Numero Whatsapp prod', import.meta.env.VITE_WHATSAPP_NUMBER)
+    
     const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '2250747997664' // Remplacez par votre numéro WhatsApp au format international
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappText}`
 
