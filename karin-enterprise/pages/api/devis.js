@@ -70,7 +70,7 @@ export default async function handler(req, res) {
       `\nMerci !`
     )
 
-    const whatsappNumber = process.env.WHATSAPP_NUMBER || '2250747997664'
+    const whatsappNumber = process.env.WHATSAPP_NUMBER
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappText}`
 
     return res.status(200).json({ success: true, whatsappUrl })
