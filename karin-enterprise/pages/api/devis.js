@@ -70,7 +70,7 @@ export default async function handler(req, res) {
       `\nMerci !`
     )
 
-    const whatsappNumber = process.env.WHATSAPP_NUMBER || '2250747997664' // Fallback si la variable d'environnement n'est pas définie
+    const whatsappNumber = import.meta.env.VITE_WHATSAPP_NUMBER || '2250747997664' // Remplacez par votre numéro WhatsApp au format international
     const whatsappUrl = `https://wa.me/${whatsappNumber}?text=${whatsappText}`
 
     return res.status(200).json({ success: true, whatsappUrl })
