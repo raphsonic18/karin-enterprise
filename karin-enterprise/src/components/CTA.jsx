@@ -19,7 +19,7 @@ export default function CTA({ onDevisClick }) {
           📋 Demander un devis
         </button>
         <a
-          href="https://wa.me/2250000000000?text=Bonjour%20Kar'in%20Enterprise%2C%20je%20voudrais%20un%20devis."
+          href="https://wa.me/2250747997664?text=Bonjour%20Kar'in%20Enterprise%2C%20je%20voudrais%20un%20devis."
           target="_blank" rel="noopener noreferrer"
           className="btn-primary"
           style={{ background: 'var(--sage-dk)' }}
